@@ -3,6 +3,7 @@ name: Test and deploy
 on:
   push:
     branches: ["first-iteration"]
+    tags: ['v*']  
   pull_request:
     branches: ["first-iteration"]
 
