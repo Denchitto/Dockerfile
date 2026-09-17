@@ -54,11 +54,6 @@ jobs:
 
       - name: lint
         run: go vet -v ./...
-      - run: |
-          echo "ref        = ${{ github.ref }}"
-          echo "ref_name   = ${{ github.ref_name }}"
-          echo "ref_type   = ${{ github.ref_type }}"
-          echo "event_name = ${{ github.event_name }}"
 
   deploy:
     name: Push image to Hub
